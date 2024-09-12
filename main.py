@@ -3,14 +3,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# Specify the file path and the sheet name
-file_path = 'Durham-Observatory-monthly-mean-temperature.xlsx'
-sheet_name = 'Durham monthly Tmean'
-
-
 def generate_dataframe(file_path, sheet_name):
     '''Read the specific sheet into a DataFrame'''
     df = pd.read_excel(file_path, sheet_name=sheet_name)
+    # print(df.iloc[0, 0])
     return df
 
 
@@ -25,12 +21,8 @@ def generate_describe(df):
         "Median": median_temp,
         "Standard deviation": std_temp
     }).T
-
-    # Calculate mean, median, and standard deviation
-    print(f'The mean of the temperature from 1795 to 2021 is {stats_df["Mean"]}')
-    print(f'The median of the temperature from 1795 to 2021 is {stats_df["Median"]}')
-    print(f'The standard deviation of the temperature from 1795 to 2021 is {stats_df["Standard deviation"]}')
-
+    # print(stats_df.iloc[0,0])
+    
     return stats_df
 
 
