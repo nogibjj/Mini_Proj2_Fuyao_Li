@@ -51,7 +51,7 @@ plt.savefig('heatmap.png', dpi=300)
 plt.show()
 
 # Writing results and figures to Markdown file
-with open('temperature_analysis.md', 'w') as f:
+with open('temperature_statistics.md', 'w', encoding='utf-8') as f:
     # Write the title
     f.write("# Temperature Analysis (1795-2021)\n\n")
 
