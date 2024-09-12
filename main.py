@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 # Specify the file path and the sheet name
 file_path = 'Durham-Observatory-monthly-mean-temperature.xlsx'
 sheet_name = 'Durham monthly Tmean'
